@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -659,6 +659,60 @@
     .upload-demo .upload-icon { font-size: 2.5rem; margin-bottom: 12px; }
     .upload-demo p { font-size: 0.9rem; color: var(--text-secondary); }
     .upload-demo strong { color: var(--gold); }
+    .upload-demo input[type="file"] { display: none; }
+
+    /* ── MEAL ANALYSIS RESULTS ── */
+    .meal-analysis-result {
+      margin-top: 20px;
+      padding: 24px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(14,23,38,0.6));
+      border: 1px solid rgba(201,168,76,0.2);
+      display: none;
+      animation: fadeUp 0.5s ease;
+    }
+    .meal-analysis-result.active { display: block; }
+    .meal-analysis-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding-bottom: 12px;
+    }
+    .meal-analysis-header h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem; font-weight: 700; color: var(--text-primary);
+    }
+    .macro-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    }
+    .macro-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 16px 12px; border-radius: 10px;
+      text-align: center; transition: transform 0.2s;
+    }
+    .macro-card:hover { transform: translateY(-3px); border-color: rgba(201,168,76,0.4); }
+    .macro-val {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.4rem; font-weight: 800; color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .macro-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px;}
+    
+    /* Loading state */
+    .ai-loading {
+      display: none; align-items: center; justify-content: center;
+      gap: 12px; margin-top: 20px; padding: 24px;
+      background: rgba(255,255,255,0.02); border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .ai-loading.active { display: flex; }
+    .ai-spinner {
+      width: 24px; height: 24px; border: 3px solid rgba(201,168,76,0.2);
+      border-top-color: var(--gold); border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    .ai-loading-text { font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; }
+    @keyframes spin { to { transform: rotate(360deg); } }
 
     /* â”€â”€ HEALTH RINGS â”€â”€ */
     .rings-row {
@@ -773,10 +827,42 @@
           <span class="pill">ðŸ“… Daily Goals</span>
           <span class="pill">ðŸ§  AI Meal Scoring</span>
         </div>
-        <div class="upload-demo" style="margin-top:20px" onclick="openModal('signup')">
-          <div class="upload-icon">ðŸ“·</div>
+        <div class="upload-demo" style="margin-top:20px" onclick="document.getElementById('mealPhotoInput').click()">
+          <div class="upload-icon">📷</div>
           <p>Drop your meal photo here or <strong>browse to upload</strong></p>
-          <p style="font-size:0.75rem; margin-top:6px; color:#555">Supports JPG, PNG, HEIC â€¢ Max 20MB</p>
+          <p style="font-size:0.75rem; margin-top:6px; color:#555">Supports JPG, PNG, HEIC • Max 20MB</p>
+          <input type="file" id="mealPhotoInput" accept="image/*" onchange="handleMealUpload(event)" />
+        </div>
+
+        <!-- AI Loading State -->
+        <div class="ai-loading" id="aiLoading">
+          <div class="ai-spinner"></div>
+          <div class="ai-loading-text">AI ASSA is analyzing your meal...</div>
+        </div>
+
+        <!-- Meal Analysis Results -->
+        <div class="meal-analysis-result" id="mealAnalysisResult">
+          <div class="meal-analysis-header">
+            <h3>Nutrition Analysis</h3>
+            <span class="pill" style="border-color: var(--emerald); color: var(--emerald);">✓ Analyzed</span>
+          </div>
+          <div style="margin-bottom: 16px; font-weight: 600; color: var(--gold-light);">
+            Meal Detected: <span id="macro-meal-name" style="color: var(--text-primary);">---</span>
+          </div>
+          <div class="macro-grid">
+            <div class="macro-card">
+              <div class="macro-val" id="macro-cals">---</div>
+              <div class="macro-label">Calories</div>
+            </div>
+            <div class="macro-card">
+              <div class="macro-val" id="macro-protein">---</div>
+              <div class="macro-label">Protein</div>
+            </div>
+            <div class="macro-card">
+              <div class="macro-val" id="macro-carbs">---</div>
+              <div class="macro-label">Carbs</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1219,9 +1305,38 @@
     closeModal();
   }
 
+  /* ── Meal Analysis Simulation ── */
+  function handleMealUpload(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    // Reset UI
+    document.getElementById('mealAnalysisResult').classList.remove('active');
+    
+    // Show Loading
+    const loadingEl = document.getElementById('aiLoading');
+    loadingEl.classList.add('active');
+
+    // Simulate AI processing delay (2.5 seconds)
+    setTimeout(() => {
+      loadingEl.classList.remove('active');
+      
+      // Inject Mock Data
+      document.getElementById('macro-meal-name').innerText = 'Grilled Salmon with Quinoa & Asparagus';
+      document.getElementById('macro-cals').innerText = '485';
+      document.getElementById('macro-protein').innerText = '32g';
+      document.getElementById('macro-carbs').innerText = '45g';
+
+      // Show Results
+      document.getElementById('mealAnalysisResult').classList.add('active');
+      
+      // Reset input for subsequent uploads
+      event.target.value = '';
+    }, 2500);
+  }
+
   /* â”€â”€ Keyboard close â”€â”€ */
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
-
