@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASSA – Your Goals. We Help. | AI Health Companion</title>
-  <meta name="description" content="ASSA — the AI health companion built on trust. Your goals, your data, your privacy. Track diet with photos, secure medical records, and monitor workouts. Your inputs are in safe hands — never shared, ever." />
+  <title>Selfgoals â€“ Your Goals. We Help. | AI Health Companion</title>
+  <meta name="description" content="Selfgoals â€” the AI health companion built on trust. Your goals, your data, your privacy. Track diet with photos, secure medical records, and monitor workouts. Your inputs are in safe hands â€” never shared, ever." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
@@ -36,12 +36,12 @@
       overflow-x: hidden;
     }
 
-    /* ── SCROLLBAR ── */
+    /* â”€â”€ SCROLLBAR â”€â”€ */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #06090f; }
     ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
 
-    /* ── AMBIENT BACKGROUND ── */
+    /* â”€â”€ AMBIENT BACKGROUND â”€â”€ */
     .ambient {
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
       overflow: hidden;
@@ -67,7 +67,7 @@
       to   { transform: translate(40px, 30px) scale(1.08); }
     }
 
-    /* ── NAV ── */
+    /* â”€â”€ NAV â”€â”€ */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       display: flex; align-items: center; justify-content: space-between;
@@ -113,7 +113,7 @@
     }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.35); }
 
-    /* ── HAMBURGER ── */
+    /* â”€â”€ HAMBURGER â”€â”€ */
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
     .hamburger span {
       display: block; width: 24px; height: 2px;
@@ -121,7 +121,7 @@
       transition: all 0.3s;
     }
 
-    /* ── HERO ── */
+    /* â”€â”€ HERO â”€â”€ */
     .hero {
       position: relative; z-index: 1;
       min-height: 100vh;
@@ -195,7 +195,7 @@
     }
     .hero-img img { width: 100%; display: block; }
 
-    /* ── STATS ── */
+    /* â”€â”€ STATS â”€â”€ */
     .stats {
       position: relative; z-index: 1;
       display: flex; justify-content: center; flex-wrap: wrap; gap: 2px;
@@ -219,7 +219,7 @@
     }
     .stat-label { font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px; }
 
-    /* ── SECTION SHARED ── */
+    /* â”€â”€ SECTION SHARED â”€â”€ */
     section { position: relative; z-index: 1; padding: 100px 5%; }
     .section-tag {
       display: inline-block; font-size: 0.72rem; font-weight: 700;
@@ -236,7 +236,7 @@
       line-height: 1.7; max-width: 520px; margin-top: 14px;
     }
 
-    /* ── FEATURES ── */
+    /* â”€â”€ FEATURES â”€â”€ */
     #features .inner { display: flex; flex-direction: column; gap: 80px; }
     .feature-row {
       display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
@@ -274,7 +274,7 @@
       color: var(--text-secondary);
     }
 
-    /* ── HOW IT WORKS ── */
+    /* â”€â”€ HOW IT WORKS â”€â”€ */
     #how { background: rgba(255,255,255,0.02); }
     .steps {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -306,7 +306,7 @@
     .step-card h3 { font-size: 1.1rem; font-weight: 700; margin: 16px 0 8px; }
     .step-card p  { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; }
 
-    /* ── TESTIMONIALS ── */
+    /* â”€â”€ TESTIMONIALS â”€â”€ */
     .testimonials-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px; margin-top: 60px;
@@ -330,7 +330,7 @@
     .testi-name { font-weight: 700; font-size: 0.92rem; }
     .testi-role { font-size: 0.78rem; color: var(--text-secondary); }
 
-    /* ── PRICING ── */
+    /* â”€â”€ PRICING â”€â”€ */
     #pricing { background: rgba(255,255,255,0.02); }
     .pricing-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -364,9 +364,9 @@
     .price-desc { font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 28px; }
     .price-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
     .price-features li { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
-    .price-features li::before { content: '✓'; color: var(--gold); font-weight: 700; }
+    .price-features li::before { content: 'âœ“'; color: var(--gold); font-weight: 700; }
     .price-features li.off { color: var(--text-secondary); }
-    .price-features li.off::before { content: '✗'; color: #333; }
+    .price-features li.off::before { content: 'âœ—'; color: #333; }
     .btn-plan {
       width: 100%; padding: 14px; border-radius: 4px;
       font-size: 0.95rem; font-weight: 700; cursor: pointer;
@@ -381,7 +381,7 @@
     }
     .btn-plan.filled:hover { box-shadow: 0 8px 30px rgba(201,168,76,0.4); transform: translateY(-2px); }
 
-    /* ── PRIVACY SECTION ── */
+    /* â”€â”€ PRIVACY SECTION â”€â”€ */
     .privacy-section {
       position: relative; z-index: 1;
       padding: 100px 5%;
@@ -462,7 +462,7 @@
     .never-share-banner strong { color: var(--gold-light); }
     @media (max-width: 900px) { .privacy-inner { grid-template-columns: 1fr; gap: 50px; } }
 
-    /* ── CTA BANNER ── */
+    /* â”€â”€ CTA BANNER â”€â”€ */
     .cta-banner {
       position: relative; z-index: 1;
       margin: 0 5% 100px;
@@ -486,7 +486,7 @@
     .cta-banner p { color: var(--text-secondary); font-size: 1rem; margin-bottom: 36px; }
     .cta-banner .actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
-    /* ── FOOTER ── */
+    /* â”€â”€ FOOTER â”€â”€ */
     footer {
       position: relative; z-index: 1;
       border-top: 1px solid var(--border);
@@ -517,7 +517,7 @@
     }
     .social-btn:hover { border-color: var(--gold); color: var(--gold); }
 
-    /* ── LOGIN / SIGNUP MODAL ── */
+    /* â”€â”€ LOGIN / SIGNUP MODAL â”€â”€ */
     .modal-overlay {
       position: fixed; inset: 0; z-index: 2000;
       background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
@@ -602,7 +602,7 @@
     .form-panel { display: none; }
     .form-panel.active { display: block; }
 
-    /* ── ANIMATIONS ── */
+    /* â”€â”€ ANIMATIONS â”€â”€ */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(28px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -613,7 +613,7 @@
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── RESPONSIVE ── */
+    /* â”€â”€ RESPONSIVE â”€â”€ */
     @media (max-width: 900px) {
       .feature-row { grid-template-columns: 1fr; }
       .feature-row.reverse { direction: ltr; }
@@ -629,7 +629,7 @@
       .cta-banner { padding: 50px 28px; }
     }
 
-    /* ── MOBILE MENU ── */
+    /* â”€â”€ MOBILE MENU â”€â”€ */
     .mobile-menu {
       position: fixed; inset: 0; z-index: 999;
       background: rgba(4,7,15,0.97); backdrop-filter: blur(20px);
@@ -648,7 +648,7 @@
       background: none; border: none;
     }
 
-    /* ── UPLOAD MOCKUP CARD ── */
+    /* â”€â”€ UPLOAD MOCKUP CARD â”€â”€ */
     .upload-demo {
       background: var(--bg-card); border: 2px dashed rgba(201,168,76,0.25);
       border-radius: 10px; padding: 32px; text-align: center;
@@ -660,7 +660,7 @@
     .upload-demo p { font-size: 0.9rem; color: var(--text-secondary); }
     .upload-demo strong { color: var(--gold); }
 
-    /* ── HEALTH RINGS ── */
+    /* â”€â”€ HEALTH RINGS â”€â”€ */
     .rings-row {
       display: flex; gap: 20px; flex-wrap: wrap; margin-top: 24px;
     }
@@ -684,13 +684,13 @@
 </head>
 <body>
 
-<!-- ═══════════════ AMBIENT ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• AMBIENT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="ambient"></div>
 
-<!-- ═══════════════ NAV ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAV â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <nav id="navbar">
   <div>
-    <div class="nav-logo">ASSA</div>
+    <div class="nav-logo">Selfgoals</div>
     <div class="nav-tagline">Your Goals. We Help.</div>
   </div>
   <ul class="nav-links">
@@ -708,9 +708,9 @@
   </div>
 </nav>
 
-<!-- ═══════════════ MOBILE MENU ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MOBILE MENU â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu-close" onclick="toggleMobileMenu()">✕</button>
+  <button class="mobile-menu-close" onclick="toggleMobileMenu()">âœ•</button>
   <a href="#features" onclick="toggleMobileMenu()">Features</a>
   <a href="#how" onclick="toggleMobileMenu()">How It Works</a>
   <a href="#testimonials" onclick="toggleMobileMenu()">Reviews</a>
@@ -718,21 +718,21 @@
   <button class="btn-xl" onclick="toggleMobileMenu();openModal('signup')">Get Started Free</button>
 </div>
 
-<!-- ═══════════════ HERO ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="hero" id="home">
   <div class="hero-badge"><span class="dot"></span> Trusted by 50,000+ people worldwide</div>
   <h1><span class="gradient-text">Your Goals.</span><br>We Help.</h1>
-  <p class="hero-sub">ASSA is your personal AI health companion — snap your meals, store your medical records securely, and track every workout. <strong style="color:var(--gold-light)">Your data stays yours, always.</strong> We never share your information with anyone, ever.</p>
+  <p class="hero-sub">Selfgoals is your personal AI health companion â€” snap your meals, store your medical records securely, and track every workout. <strong style="color:var(--gold-light)">Your data stays yours, always.</strong> We never share your information with anyone, ever.</p>
   <div class="hero-actions">
     <button class="btn-xl" onclick="openModal('signup')">Start Free Today</button>
-    <button class="btn-xl-ghost" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Explore Features ↓</button>
+    <button class="btn-xl-ghost" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Explore Features â†“</button>
   </div>
   <div class="hero-img">
-    <img src="images/hero.png" alt="AI ASSA Full Body Health Dashboard" />
+    <img src="images/hero.png" alt="AI Selfgoals Full Body Health Dashboard" />
   </div>
 </section>
 
-<!-- ═══════════════ STATS ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• STATS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="stats">
   <div class="stat-card reveal">
     <div class="stat-num">50K+</div>
@@ -752,7 +752,7 @@
   </div>
 </div>
 
-<!-- ═══════════════ FEATURES ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FEATURES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="features">
   <div class="inner">
 
@@ -762,21 +762,21 @@
         <img src="images/diet.png" alt="AI Diet Photo Tracking" />
       </div>
       <div class="feature-text">
-        <div class="feature-icon cyan">🍽️</div>
+        <div class="feature-icon cyan">ðŸ½ï¸</div>
         <span class="section-tag">Smart Diet Tracking</span>
         <h2 class="feature-title">Snap a Photo, Know Your Nutrition</h2>
-        <p class="feature-desc">Simply photograph your meal and AI ASSA instantly identifies every ingredient, calculates macronutrients, and logs your daily intake — zero manual entry required. Like having a nutritionist in your pocket.</p>
+        <p class="feature-desc">Simply photograph your meal and AI Selfgoals instantly identifies every ingredient, calculates macronutrients, and logs your daily intake â€” zero manual entry required. Like having a nutritionist in your pocket.</p>
         <div class="feature-pills">
-          <span class="pill">📸 Photo Recognition</span>
-          <span class="pill">🔥 Calorie Counter</span>
-          <span class="pill">💊 Macros & Micros</span>
-          <span class="pill">📅 Daily Goals</span>
-          <span class="pill">🧠 AI Meal Scoring</span>
+          <span class="pill">ðŸ“¸ Photo Recognition</span>
+          <span class="pill">ðŸ”¥ Calorie Counter</span>
+          <span class="pill">ðŸ’Š Macros & Micros</span>
+          <span class="pill">ðŸ“… Daily Goals</span>
+          <span class="pill">ðŸ§  AI Meal Scoring</span>
         </div>
         <div class="upload-demo" style="margin-top:20px" onclick="openModal('signup')">
-          <div class="upload-icon">📷</div>
+          <div class="upload-icon">ðŸ“·</div>
           <p>Drop your meal photo here or <strong>browse to upload</strong></p>
-          <p style="font-size:0.75rem; margin-top:6px; color:#555">Supports JPG, PNG, HEIC • Max 20MB</p>
+          <p style="font-size:0.75rem; margin-top:6px; color:#555">Supports JPG, PNG, HEIC â€¢ Max 20MB</p>
         </div>
       </div>
     </div>
@@ -787,17 +787,17 @@
         <img src="images/medical.png" alt="Secure Medical Document Vault" />
       </div>
       <div class="feature-text">
-        <div class="feature-icon violet">🔐</div>
+        <div class="feature-icon violet">ðŸ”</div>
         <span class="section-tag">Medical Vault</span>
         <h2 class="feature-title">All Your Health Records, Secured & Smart</h2>
-        <p class="feature-desc">Upload prescriptions, lab tests, ECG reports, X-rays, and insurance cards. AI ASSA organizes them intelligently, extracts key health insights, and makes them available anytime — across all your devices.</p>
+        <p class="feature-desc">Upload prescriptions, lab tests, ECG reports, X-rays, and insurance cards. AI Selfgoals organizes them intelligently, extracts key health insights, and makes them available anytime â€” across all your devices.</p>
         <div class="feature-pills">
-          <span class="pill">🏥 Lab Reports</span>
-          <span class="pill">💊 Prescriptions</span>
-          <span class="pill">🩺 ECG & Vitals</span>
-          <span class="pill">🔒 AES-256 Encrypted</span>
-          <span class="pill">📱 Cross-Device Sync</span>
-          <span class="pill">🤖 AI Health Summary</span>
+          <span class="pill">ðŸ¥ Lab Reports</span>
+          <span class="pill">ðŸ’Š Prescriptions</span>
+          <span class="pill">ðŸ©º ECG & Vitals</span>
+          <span class="pill">ðŸ”’ AES-256 Encrypted</span>
+          <span class="pill">ðŸ“± Cross-Device Sync</span>
+          <span class="pill">ðŸ¤– AI Health Summary</span>
         </div>
       </div>
     </div>
@@ -808,10 +808,10 @@
         <img src="images/workout.png" alt="AI Workout & Exercise Tracking" />
       </div>
       <div class="feature-text">
-        <div class="feature-icon green">🏋️</div>
+        <div class="feature-icon green">ðŸ‹ï¸</div>
         <span class="section-tag">Workout & Exercise</span>
         <h2 class="feature-title">Train Smarter with Full-Body Analytics</h2>
-        <p class="feature-desc">Track workouts just like Apple Health — log reps, sets, cardio sessions, and see your active rings close in real-time. AI ASSA learns your fitness level and personalizes your plan week by week.</p>
+        <p class="feature-desc">Track workouts just like Apple Health â€” log reps, sets, cardio sessions, and see your active rings close in real-time. AI Selfgoals learns your fitness level and personalizes your plan week by week.</p>
         <div class="rings-row">
           <div class="ring-item">
             <div class="ring-circle ring-move" data-val="87%"></div>
@@ -827,11 +827,11 @@
           </div>
         </div>
         <div class="feature-pills" style="margin-top:18px">
-          <span class="pill">🏃 Cardio Tracker</span>
-          <span class="pill">💪 Strength Log</span>
-          <span class="pill">❤️ Heart Rate</span>
-          <span class="pill">😴 Sleep Analysis</span>
-          <span class="pill">🎯 Weekly Goals</span>
+          <span class="pill">ðŸƒ Cardio Tracker</span>
+          <span class="pill">ðŸ’ª Strength Log</span>
+          <span class="pill">â¤ï¸ Heart Rate</span>
+          <span class="pill">ðŸ˜´ Sleep Analysis</span>
+          <span class="pill">ðŸŽ¯ Weekly Goals</span>
         </div>
       </div>
     </div>
@@ -839,31 +839,31 @@
   </div>
 </section>
 
-<!-- ═══════════════ PRIVACY PROMISE ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PRIVACY PROMISE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="privacy-section reveal">
   <div class="privacy-inner">
     <div class="privacy-left">
-      <div class="privacy-shield">🔐</div>
+      <div class="privacy-shield">ðŸ”</div>
       <span class="privacy-promise">Our Core Commitment</span>
       <h2 class="privacy-title">Privacy is Our<br><span class="gold">Greatest Feature</span></h2>
-      <p class="privacy-desc">We built ASSA on a simple promise: your health is the most personal thing you own. Your inputs — photos, medical documents, workout data — are encrypted, private, and <strong style="color:var(--text-primary)">never shared with third parties, advertisers, or anyone else.</strong> Not now. Not ever.</p>
+      <p class="privacy-desc">We built Selfgoals on a simple promise: your health is the most personal thing you own. Your inputs â€” photos, medical documents, workout data â€” are encrypted, private, and <strong style="color:var(--text-primary)">never shared with third parties, advertisers, or anyone else.</strong> Not now. Not ever.</p>
       <div class="privacy-pledges">
         <div class="pledge">
-          <div class="pledge-icon">🚫</div>
+          <div class="pledge-icon">ðŸš«</div>
           <div>
             <h4>Zero Data Selling</h4>
             <p>We will never sell, rent, or trade your personal health data. Your information is not a product.</p>
           </div>
         </div>
         <div class="pledge">
-          <div class="pledge-icon">🔒</div>
+          <div class="pledge-icon">ðŸ”’</div>
           <div>
             <h4>AES-256 Military-Grade Encryption</h4>
-            <p>All your records, meal photos, and documents are encrypted at rest and in transit — only you hold the key.</p>
+            <p>All your records, meal photos, and documents are encrypted at rest and in transit â€” only you hold the key.</p>
           </div>
         </div>
         <div class="pledge">
-          <div class="pledge-icon">👁️</div>
+          <div class="pledge-icon">ðŸ‘ï¸</div>
           <div>
             <h4>Full Data Transparency</h4>
             <p>Download or permanently delete every byte of your data at any time, in one click. No questions asked.</p>
@@ -876,28 +876,28 @@
         <div class="trust-headline">Our Security Standards</div>
         <div class="trust-items">
           <div class="trust-item">
-            <div class="t-icon">🛡️</div>
+            <div class="t-icon">ðŸ›¡ï¸</div>
             <div class="t-text">
               <h5>HIPAA Compliant</h5>
               <p>Full compliance with healthcare data regulations</p>
             </div>
           </div>
           <div class="trust-item">
-            <div class="t-icon">🌍</div>
+            <div class="t-icon">ðŸŒ</div>
             <div class="t-text">
               <h5>GDPR Ready</h5>
               <p>European data protection law, applied globally</p>
             </div>
           </div>
           <div class="trust-item">
-            <div class="t-icon">🔑</div>
+            <div class="t-icon">ðŸ”‘</div>
             <div class="t-text">
               <h5>Zero-Knowledge Architecture</h5>
               <p>Even our team cannot access your health records</p>
             </div>
           </div>
           <div class="trust-item">
-            <div class="t-icon">📋</div>
+            <div class="t-icon">ðŸ“‹</div>
             <div class="t-text">
               <h5>SOC 2 Type II Certified</h5>
               <p>Independently audited security & availability</p>
@@ -905,15 +905,15 @@
           </div>
         </div>
         <div class="never-share-banner">
-          <div class="ns-icon">🤝</div>
-          <p><strong>Our Pledge to You:</strong> Your health inputs are in good hands. We will <strong>never ever share</strong> your personal data with others — guaranteed by design, not just policy.</p>
+          <div class="ns-icon">ðŸ¤</div>
+          <p><strong>Our Pledge to You:</strong> Your health inputs are in good hands. We will <strong>never ever share</strong> your personal data with others â€” guaranteed by design, not just policy.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HOW IT WORKS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="how">
   <div style="text-align:center" class="reveal">
     <span class="section-tag">The Process</span>
@@ -933,7 +933,7 @@
     <div class="step-card reveal">
       <div class="step-num">03</div>
       <h3>Snap & Track Daily Diet</h3>
-      <p>Photograph every meal. AI ASSA identifies ingredients and nutrition instantly, keeping your daily diet journal effortlessly up-to-date.</p>
+      <p>Photograph every meal. AI Selfgoals identifies ingredients and nutrition instantly, keeping your daily diet journal effortlessly up-to-date.</p>
     </div>
     <div class="step-card reveal">
       <div class="step-num">04</div>
@@ -943,51 +943,51 @@
   </div>
 </section>
 
-<!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• TESTIMONIALS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="testimonials">
   <div style="text-align:center" class="reveal">
     <span class="section-tag">Real Stories</span>
-    <h2 class="section-title">People Trust ASSA</h2>
+    <h2 class="section-title">People Trust Selfgoals</h2>
     <p class="section-sub" style="margin:14px auto 0">Join thousands who transformed their health with an AI that truly understands their body.</p>
   </div>
   <div class="testimonials-grid">
     <div class="testi-card reveal">
-      <div class="stars">★★★★★</div>
-      <p>"I used to forget my blood reports everywhere. AI ASSA keeps everything organized and even tells me what my lab values mean. Game changer for managing my diabetes."</p>
+      <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+      <p>"I used to forget my blood reports everywhere. AI Selfgoals keeps everything organized and even tells me what my lab values mean. Game changer for managing my diabetes."</p>
       <div class="testi-author">
         <div class="testi-avatar">P</div>
         <div>
           <div class="testi-name">Priya Sharma</div>
-          <div class="testi-role">Type 2 Diabetic · Mumbai</div>
+          <div class="testi-role">Type 2 Diabetic Â· Mumbai</div>
         </div>
       </div>
     </div>
     <div class="testi-card reveal">
-      <div class="stars">★★★★★</div>
-      <p>"The photo diet tracking is insane. I snap my lunch and boom — calories, carbs, everything. I've lost 12 kg in 3 months just by being more aware of what I eat."</p>
+      <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+      <p>"The photo diet tracking is insane. I snap my lunch and boom â€” calories, carbs, everything. I've lost 12 kg in 3 months just by being more aware of what I eat."</p>
       <div class="testi-author">
         <div class="testi-avatar">J</div>
         <div>
           <div class="testi-name">Jake Morrison</div>
-          <div class="testi-role">Fitness Enthusiast · London</div>
+          <div class="testi-role">Fitness Enthusiast Â· London</div>
         </div>
       </div>
     </div>
     <div class="testi-card reveal">
-      <div class="stars">★★★★★</div>
-      <p>"Feels exactly like Apple Health but smarter. The workout rings, heart rate analysis, and sleep tracking all in one place. My trainer uses the data too — it's so professional."</p>
+      <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
+      <p>"Feels exactly like Apple Health but smarter. The workout rings, heart rate analysis, and sleep tracking all in one place. My trainer uses the data too â€” it's so professional."</p>
       <div class="testi-author">
         <div class="testi-avatar">A</div>
         <div>
           <div class="testi-name">Aisha Rahman</div>
-          <div class="testi-role">Personal Trainer · Dubai</div>
+          <div class="testi-role">Personal Trainer Â· Dubai</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ PRICING ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PRICING â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="pricing">
   <div style="text-align:center" class="reveal">
     <span class="section-tag">Plans</span>
@@ -1031,7 +1031,7 @@
       <div class="price-amount">$28 <span>/ month</span></div>
       <div class="price-desc">Everything in Pro for up to 5 family members.</div>
       <ul class="price-features">
-        <li>All Pro Features × 5 Members</li>
+        <li>All Pro Features Ã— 5 Members</li>
         <li>Family Health Dashboard</li>
         <li>Shared Medical Record Access</li>
         <li>Child Health Profiles</li>
@@ -1044,23 +1044,23 @@
   </div>
 </section>
 
-<!-- ═══════════════ CTA BANNER ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CTA BANNER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="cta-banner reveal">
   <h2>Your Goals Matter.<br><span style="background:var(--gradient-accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent">We're Here to Help.</span></h2>
-  <p>Join 50,000+ people who trust ASSA for their full-body health oversight. Your data stays private — always. Free to start, powerful forever.</p>
+  <p>Join 50,000+ people who trust Selfgoals for their full-body health oversight. Your data stays private â€” always. Free to start, powerful forever.</p>
   <div class="actions">
     <button class="btn-xl" onclick="openModal('signup')">Create My Free Account</button>
     <button class="btn-xl-ghost" onclick="openModal('login')">Already a member? Log In</button>
   </div>
 </div>
 
-<!-- ═══════════════ FOOTER ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="nav-logo">ASSA</div>
+      <div class="nav-logo">Selfgoals</div>
     <div style="font-size:0.7rem;color:var(--gold-dark);letter-spacing:1.5px;text-transform:uppercase;margin:2px 0 14px">Your Goals. We Help.</div>
-    <p>Privacy-first AI health companion. Tracking your diet, workouts, and medical history — with a solemn promise: your data is never shared.</p>
+    <p>Privacy-first AI health companion. Tracking your diet, workouts, and medical history â€” with a solemn promise: your data is never shared.</p>
     </div>
     <div class="footer-col">
       <h4>Product</h4>
@@ -1091,21 +1091,21 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 ASSA Health. All rights reserved. &nbsp;|&nbsp; <span style="color:var(--gold);font-weight:600">Your data. Your privacy. Our promise.</span></span>
+    <span>Â© 2025 Selfgoals Health. All rights reserved. &nbsp;|&nbsp; <span style="color:var(--gold);font-weight:600">Your data. Your privacy. Our promise.</span></span>
     <div class="socials">
-      <a class="social-btn" href="#" title="Twitter">𝕏</a>
-      <a class="social-btn" href="#" title="Instagram">📸</a>
+      <a class="social-btn" href="#" title="Twitter">ð•</a>
+      <a class="social-btn" href="#" title="Instagram">ðŸ“¸</a>
       <a class="social-btn" href="#" title="LinkedIn">in</a>
-      <a class="social-btn" href="#" title="YouTube">▶</a>
+      <a class="social-btn" href="#" title="YouTube">â–¶</a>
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════ MODAL ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MODAL â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnBg(event)">
   <div class="modal" id="modal">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div class="modal-logo">ASSA</div>
+    <button class="modal-close" onclick="closeModal()">âœ•</button>
+    <div class="modal-logo">Selfgoals</div>
     <div class="modal-tagline">Your Goals. We Help.</div>
     <p style="font-size:0.85rem;color:var(--text-secondary)">Your AI-powered full-body health companion</p>
     <div class="modal-tabs">
@@ -1121,14 +1121,14 @@
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" id="login-password" placeholder="••••••••" />
+        <input type="password" id="login-password" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" />
       </div>
-      <button class="form-submit" onclick="handleLogin()">Log In to ASSA</button>
-      <p class="modal-privacy-note">🔒 <span>Your data is encrypted</span> and never shared with third parties.</p>
+      <button class="form-submit" onclick="handleLogin()">Log In to Selfgoals</button>
+      <p class="modal-privacy-note">ðŸ”’ <span>Your data is encrypted</span> and never shared with third parties.</p>
       <div class="modal-divider">or continue with</div>
       <div class="social-logins">
-        <button class="social-login-btn">🍎 Apple</button>
-        <button class="social-login-btn">🔵 Google</button>
+        <button class="social-login-btn">ðŸŽ Apple</button>
+        <button class="social-login-btn">ðŸ”µ Google</button>
       </div>
     </div>
 
@@ -1151,38 +1151,38 @@
         <input type="date" id="signup-dob" />
       </div>
       <button class="form-submit" onclick="handleSignup()">Create My Free Account</button>
-      <p class="modal-privacy-note">🔐 <span>Privacy guaranteed.</span> Your inputs are in good hands — never ever shared.</p>
+      <p class="modal-privacy-note">ðŸ” <span>Privacy guaranteed.</span> Your inputs are in good hands â€” never ever shared.</p>
       <div class="modal-divider">or sign up with</div>
       <div class="social-logins">
-        <button class="social-login-btn">🍎 Apple</button>
-        <button class="social-login-btn">🔵 Google</button>
+        <button class="social-login-btn">ðŸŽ Apple</button>
+        <button class="social-login-btn">ðŸ”µ Google</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SCRIPTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <script>
-  /* ── Reveal on scroll ── */
+  /* â”€â”€ Reveal on scroll â”€â”€ */
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
   }, { threshold: 0.12 });
   reveals.forEach(r => io.observe(r));
 
-  /* ── Nav scroll ── */
+  /* â”€â”€ Nav scroll â”€â”€ */
   window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
     nav.style.background = window.scrollY > 40
       ? 'rgba(8,11,18,0.97)' : 'rgba(8,11,18,0.82)';
   });
 
-  /* ── Mobile Menu ── */
+  /* â”€â”€ Mobile Menu â”€â”€ */
   function toggleMobileMenu() {
     document.getElementById('mobileMenu').classList.toggle('open');
   }
 
-  /* ── Modal ── */
+  /* â”€â”€ Modal â”€â”€ */
   function openModal(tab) {
     document.getElementById('modalOverlay').classList.add('open');
     switchTab(tab);
@@ -1202,12 +1202,12 @@
     document.getElementById('panel-signup').classList.toggle('active', tab === 'signup');
   }
 
-  /* ── Auth handlers (demo) ── */
+  /* â”€â”€ Auth handlers (demo) â”€â”€ */
   function handleLogin() {
     const email = document.getElementById('login-email').value;
     const pass  = document.getElementById('login-password').value;
     if (!email || !pass) { alert('Please fill in all fields.'); return; }
-    alert(`Welcome back! Logging in as ${email}…\n\n🔐 Your session is fully encrypted.`);
+    alert(`Welcome back! Logging in as ${email}â€¦\n\nðŸ” Your session is fully encrypted.`);
     closeModal();
   }
   function handleSignup() {
@@ -1215,12 +1215,13 @@
     const email = document.getElementById('signup-email').value;
     const pass  = document.getElementById('signup-password').value;
     if (!name || !email || !pass) { alert('Please fill in all required fields.'); return; }
-    alert(`🎉 Welcome, ${name}! Your ASSA account is being created…\n\n🔐 Your data is encrypted and 100% private. We will never share anything.`);
+    alert(`ðŸŽ‰ Welcome, ${name}! Your Selfgoals account is being createdâ€¦\n\nðŸ” Your data is encrypted and 100% private. We will never share anything.`);
     closeModal();
   }
 
-  /* ── Keyboard close ── */
+  /* â”€â”€ Keyboard close â”€â”€ */
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
+
