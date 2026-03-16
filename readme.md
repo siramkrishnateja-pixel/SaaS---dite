@@ -1,0 +1,1 @@
+This is AI Sasa project for Dite control and health tracking.
