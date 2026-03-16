@@ -1,1 +1,2 @@
-This is AI Sasa project for Dite control and health tracking. - Author: Krishna
+﻿This is AI Selfgoals project for Dite control and health tracking. - Author: Krishna
+
