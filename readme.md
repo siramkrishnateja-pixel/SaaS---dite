@@ -1,1 +1,1 @@
-This is AI Sasa project for Dite control and health tracking.
+This is AI Sasa project for Dite control and health tracking. - Author: Krishna
